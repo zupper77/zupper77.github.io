@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "테스트 중"
+date:   2016-01-20 10:31:35 +0900
+categories: test
+---
+
+# 제목 1
+
+## 제목 2
+
+### 제목 3 
+
+#### 제목 4 ####
+
+##### 제목 5 #####
+
+###### 제목 6 ######
+
+*기울여쓰기(italic)* _기울여쓰기(italic)_
+**굵게쓰기(bold)** __굵게쓰기(bold)__
+
+WordPress
+:  세계 최대의 오픈 소스 
+저작물 관리 시스템 
+
+Markdown
+:  일반 텍스트 문서를
+HTML로 변환하는 도구
+
+
+
+
+
+
+-----
+
+# 코드
+
+```
+function() {}
+```
+
+`code` 중간 강조
+
+-----
+
+단어 **강조**
+
+*이텔릭*
+
+- [네이버](www.naver.com)
+
+-----
+
+단락
+
+1. 111
+2. 2222
+  1. 1111
+    1. 111
+  2. 222
+
+
+> Hudson 개발 서버 : 192.168.28.208:8080
+
+{% highlight shell %}
+$ /usr7/ec/.hudson
+	# Hudson 빌드 장소
+$ find . -name message-common.properties
+	# 특정 파일 찾기
+{% endhighlight %}
+
+
+{% highlight ruby linenos %}
+$ git remote -v
+ 	# View existing remotes
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push)
+
+$ git remote set-url origin https://github.com/user/repo2.git
+# Change the 'origin' remote's URL
+{% endhighlight %}

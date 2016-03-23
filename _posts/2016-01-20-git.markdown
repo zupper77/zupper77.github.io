@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Git 명령어"
+date:   2016-01-20 10:31:35 +0900
+categories: developer
+---
+test
+<!--more-->
+# 코드
+
+```
+function() {}
+```
+
+---
+
+{% highlight shell %}
+
+# push까지 한 거 취소
+git reset HEAD^
+git reset HEAD~2
+
+# reset 한 거 취소
+git reflog
+git reset --hard HEAD@{1}
+
+# branch 삭제 
+git branch -d develop
+
+# branch 강제 삭제
+git branch -D develop
+
+## develop branch를 master branch 로 merge
+git checkout master
+
+## --no-ff 옵션은 무조건 3-Way-Merge를 수행하라는 의미
+## 3-Way-Merge : 하나의 Branch를 다른 Branch로 합치는 작업을 의미
+## http://tuwlab.com/ece/22218
+git merge --no-ff develop
+git push origin master
+
+# Git 리모트에 branch 정보 
+git remote show origin
+
+# Git 리모트에서 삭제된 브랜치 업데이트하기
+# 아래 두 명령 중의 하나로 처리할 수 있다.
+git remote prune origin
+git remote update --prune
+
+{% endhighlight %}
+
+
+---
+참조사이트 
+http://rapapa.net/?p=50
+https://mylko72.gitbooks.io/git/content/remote/branch.html
+---
+git branch -a
