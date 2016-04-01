@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   서토리의 고분고투 개발 스토리를 담은 블로그입니다.
 
 # url info
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://zupper77.github.io # the base hostname & protocol for your site
 enforce_ssl: zupper77.github.io
 
